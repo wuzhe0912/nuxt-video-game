@@ -1,8 +1,22 @@
-<template>
-  <div>
-    <Nuxt />
-  </div>
+<template lang="pug">
+  .default__layout__wrap
+    Navigation
+    Nuxt
 </template>
+
+<script>
+import Navigation from '@/components/Navigation.vue'
+
+export default {
+  components: {
+    Navigation
+  },
+
+  data () {
+    return {}
+  }
+}
+</script>
 
 <style>
 html {
